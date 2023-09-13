@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+
+h1,
+h3 {
+    margin: 0;
+}
+
+button {
+    padding: 2rem;
+    background-color: #803362;
+    color: white;
+    border-radius: 50px;
+    font-size: 2rem;
+    font-family: 'League Spartan', sans-serif;
+    border: 0px;
+}
+
+button:hover {
+    background-color: #FF66C4;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    padding: 0rem 1rem;
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+nav a {
+    color: #FF914D;
+}
+
+nav a:hover {
+    color: #FF66C4;
+}
+
+.card {
+    padding: 2rem 2rem;
+    max-width: 1200px;
+    margin: auto;
+    
+}
+
+.hero, 
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-text {
+    font-size: 2em;
+}
+
+.card-text h3 {
+    color: #FF914D;
+}
+
+.card-text h1 u {
+    color: #FF66C4;
+}
+
+footer {
+    background-color: antiquewhite;
+}
