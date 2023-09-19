@@ -13,7 +13,7 @@
 <body class="league-spartan">
   <div class="container">
     <header class="d-flex flex-wrap justify-content-center align-items-center py-4 border-bottom">
-      <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-lg-auto link-body-emphasis text-decoration-none"><img
+      <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-lg-auto link-body-emphasis text-decoration-none"><img
           src="assets/header-brand-lg.svg" class="img-fluid" alt="" /></a>
       <ul class="nav nav-pills fs-4">
         <li class="nav-item">
@@ -50,13 +50,25 @@
       </div>
     </main>
     <footer class="d-flex flex-wrap justify-content-center align-items-center py-4">
-      <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-lg-auto link-body-emphasis text-decoration-none"><img
+      <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-lg-auto link-body-emphasis text-decoration-none"><img
           src="assets/header-brand-lg.svg" class="img-fluid" alt="" />
       </a>
 
-      <address>123 Banana Peel Lane 
-        Slippery Slope, CA 98765</address>
-      
+      <button id="confetti-button">Click for Confetti!</button>
+
+      <script>
+        const confettiButton = document.getElementById('confetti-button');
+
+        confettiButton.addEventListener('click', () => {
+          confetti({
+            particleCount: 100,
+            spread: 70,
+            origin: { y: 0.6 }
+          });
+        });
+      </script>
+
+      <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
     </footer>
   </div>
 </body>
