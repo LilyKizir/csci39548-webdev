@@ -1,14 +1,40 @@
 .league-spartan {
-    font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
 }
 
 .hero-text h3 {
-    font-size: 2rem;
-    color: #FF914D;
+  font-size: 2rem;
+  color: #ff914d;
 }
 
-
 .hero-text h1 {
-    font-size: 4rem;
-    font-weight: bold;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.carousel-item {
+  height: 500px;
+  align-items: center;
+}
+
+/* Custom arrow styling */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+}
+
+.carousel-control-prev-icon {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid #000;
+}
+
+.carousel-control-next-icon {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #000;
 }
