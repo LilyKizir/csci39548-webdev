@@ -13,7 +13,7 @@
 <body class="league-spartan">
   <div class="container">
     <header class="d-flex flex-wrap justify-content-center align-items-center py-4 border-bottom">
-      <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-lg-auto link-body-emphasis text-decoration-none"><img
+      <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-lg-auto link-body-emphasis text-decoration-none"><img
           src="assets/header-brand-lg.svg" class="img-fluid" alt="" /></a>
       <ul class="nav nav-pills fs-4">
         <li class="nav-item">
@@ -25,7 +25,49 @@
     </header>
     <main class="py-4">
 
+      <h1>The team.</h1>
+
+      <table class="table table-bordered">
+        <tr>
+          <td><img src="assets/Lily.png" height="250px" alt=""></td> 
+          <td><h3>Lily: </h3>Lily is a jovial jabberwocky who enjoys juxtaposing jellybeans while juggling jackanapes. She jabbers joyfully with jumen about their jerkins and jupes. Lily is quite the jactitant aquilifer, always jactating to her friends. What a jocund Jessica!</td>
+        </tr>
+        <tr>
+          <td><img src="assets/snoopy.jpeg" height="250px" alt=""></td>
+          <td><h3>Brajan: </h3>Brajan is a boisterous bummalo who burbles busily while brutting his brimborions. He loves to brimbulate on the beach with his best bartizan Brutus. They browse at bromalites and eat bajan at the quodlibetaria. Oh what a convivial little pisan!</td> 
+        </tr>
+        <tr>
+          <td><img src="assets/snoopy2.png" height="250px" alt=""></td>
+          <td><h3>Uriel: </h3>Uriel is a silly spatchcock who spies spangles in the sky while eating amburatoria. He dreams of aseities and always sanculotes before sleeping. Uriel likes to tintinnabulate his tensible and sing soliloquies. What a risible little clampong!</td>
+        </tr>
+        <tr>
+          <td><img src="assets/snoopy3.jpeg" height="250px" alt=""></td>
+          <td><h3>Rezaur: </h3>Rezaur is a rapscallion quisquilianist who enjoys circumforaneously runtifying his velociped. He likes to visit his fatiloquent friends Borborygmus and Hourriah for pudibund pastimes. Rezaur fancies himself quite the flibustier, but he's really just a supercherie urchin.</td>
+        </tr>
+      </table>
+
     </main>
+    <footer class="d-flex flex-wrap justify-content-center align-items-center py-4">
+      <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-lg-auto link-body-emphasis text-decoration-none"><img
+          src="assets/header-brand-lg.svg" class="img-fluid" alt="" />
+      </a>
+
+      <button id="confetti-button">Click for Confetti!</button>
+
+      <script>
+        const confettiButton = document.getElementById('confetti-button');
+
+        confettiButton.addEventListener('click', () => {
+          confetti({
+            particleCount: 100,
+            spread: 70,
+            origin: { y: 0.6 }
+          });
+        });
+      </script>
+
+      <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    </footer>
   </div>
 </body>
 
